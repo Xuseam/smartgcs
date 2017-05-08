@@ -1,0 +1,12 @@
+---
+declared-services:
+  visual-recognition-service:
+    label: watson_vision_combined
+    plan: free
+applications:
+- name: smartgc
+  path: .
+  command: npm start
+  memory: 512M
+  env:
+    NODE_ENV: production
